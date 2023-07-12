@@ -1,5 +1,8 @@
 FROM botb-base-image:latest
 
+# this is to ensure we push to the right repo
+LABEL org.opencontainers.image.title=$NAME org.opencontainers.image.description=$NAME org.opencontainers.image.url=https://github.com/battleofthebots/$NAME org.opencontainers.image.source=https://github.com/battleofthebots/$NAME org.opencontainers.image.version=main
+
 COPY scripts/vulnerable /usr/lib/cgi-bin/
 RUN chmod +x /usr/lib/cgi-bin/vulnerable
 
